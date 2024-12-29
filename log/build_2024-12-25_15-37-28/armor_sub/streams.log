@@ -1,0 +1,32 @@
+[0.007s] Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_sub': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_sub -- -j12 -l12
+[0.045s] [ 50%] Built target armor_sub_node
+[0.046s] [100%] Built target armor_sub
+[0.053s] Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_sub' returned '0': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_sub -- -j12 -l12
+[0.054s] Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_sub': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xzq/Downloads/armor_ws/build/armor_sub
+[0.060s] -- Install configuration: "Release"
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/lib/armor_sub/armor_sub_node
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/include
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/include/ArmorSubNode.h
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/library_path.sh
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/library_path.dsv
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/lib/libarmor_sub.so
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/package_run_dependencies/armor_sub
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/parent_prefix_path/armor_sub
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/ament_prefix_path.sh
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/ament_prefix_path.dsv
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/path.sh
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/path.dsv
+[0.060s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.bash
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.sh
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.zsh
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.dsv
+[0.061s] -- Installing: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/package.dsv
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/packages/armor_sub
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/rclcpp_components/armor_sub
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/ament_cmake_export_libraries-extras.cmake
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/armor_subConfig.cmake
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/armor_subConfig-version.cmake
+[0.061s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/package.xml
+[0.062s] Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_sub' returned '0': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xzq/Downloads/armor_ws/build/armor_sub

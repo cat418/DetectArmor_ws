@@ -1,0 +1,31 @@
+[ 14%] Built target armor_pub_node
+[ 28%] Built target hik_driver
+[35m[1mConsolidate compiler generated dependencies of target armor_pub[0m
+[100%] Built target armor_pub
+-- Install configuration: "Release"
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/lib/armor_pub/armor_pub_node
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/include
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/include/pnpslover.h
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/include/detect.h
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/library_path.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/library_path.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/lib/libarmor_pub.so
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/package_run_dependencies/armor_pub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/parent_prefix_path/armor_pub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/path.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/path.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.bash
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.zsh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.dsv
+-- Installing: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/package.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/packages/armor_pub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/rclcpp_components/armor_pub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/armor_pubConfig.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/armor_pubConfig-version.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/package.xml

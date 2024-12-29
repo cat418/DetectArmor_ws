@@ -1,0 +1,4 @@
+[ 14%] Built target armor_pub_node
+[ 28%] Built target hik_driver
+[35m[1mConsolidate compiler generated dependencies of target armor_pub[0m
+[ 35%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o[0m

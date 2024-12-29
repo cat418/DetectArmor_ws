@@ -1,0 +1,30 @@
+<?xml version="1.0"?> <!--声明该文件是一个xml文件 指定xml版本为1.0-->
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>armor_interfaces</name> <!--构建一个名为armor_interfaces的ROS2接口包-->
+  <version>0.0.0</version><!--包的版本号-->
+  <description>TODO: Package description</description><!--描述包的功能-->
+  <maintainer email="2127800097@qq.com">root</maintainer>
+  <license>TODO: License declaration</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend><!--包构建时需要的依赖-->
+  <depend>geometry_msgs</depend><!--包运行时需要的依赖-->
+
+  <build_depend>rosidl_default_generators</build_depend><!--定义包构建时需要依赖的生成工具-->
+  <exec_depend>rosidl_default_runtime</exec_depend><!--定义包在运行时需要依赖的包-->
+
+ <!--：这个元素表示当前包属于某个特定的包组。在这个例子中，armor_interfaces 包被指定为 rosidl_interface_packages 组的一部分。-->
+  <member_of_group>rosidl_interface_packages</member_of_group>
+ 
+ <!--自动执行代码风格检查、代码质量检查等工具，帮助确保包代码符合规范。-->
+  <test_depend>ament_lint_auto</test_depend>
+  <!--这是一个包含常用代码检查工具（如 cppcheck, clang-tidy）的工具包，通常与 ament_lint_auto 配合使用，用于代码的静态分析。-->
+  <test_depend>ament_lint_common</test_depend>
+
+<!--这个元素用于定义包的构建系统和其他导出设置。-->
+  <export>
+  <!--定义包使用的构建工具。ament_cmake 是 ROS 2 中的标准构建工具，类似于 CMake，用于编译和链接 ROS 2 包。-->
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>

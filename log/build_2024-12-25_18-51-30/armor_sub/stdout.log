@@ -1,0 +1,28 @@
+[ 50%] Built target armor_sub_node
+[100%] Built target armor_sub
+-- Install configuration: "Release"
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/lib/armor_sub/armor_sub_node
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/include
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/include/ArmorSubNode.h
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/library_path.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/library_path.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/lib/libarmor_sub.so
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/package_run_dependencies/armor_sub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/parent_prefix_path/armor_sub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/ament_prefix_path.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/path.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/environment/path.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.bash
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.sh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.zsh
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/local_setup.dsv
+-- Installing: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/package.dsv
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/packages/armor_sub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/ament_index/resource_index/rclcpp_components/armor_sub
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/armor_subConfig.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/cmake/armor_subConfig-version.cmake
+-- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_sub/share/armor_sub/package.xml

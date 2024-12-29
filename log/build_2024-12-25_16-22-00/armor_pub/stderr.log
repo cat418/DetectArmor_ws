@@ -1,0 +1,28 @@
+In file included from [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+                 from [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:1[m[K:
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:48:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   48 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // 时间戳 毫秒
+      |             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:47:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   47 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};//存储图像数据
+      |             [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:59:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+   59 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+      |     [01;35m[K^~~~~~~~[m[K
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:[m[K In constructor ‘[01m[KArmorPubNode::ArmorPubNode(const rclcpp::NodeOptions&)[m[K’:
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:99:39:[m[K [01;35m[Kwarning: [m[Kparameter declaration before lambda trailing return type only optional with ‘[01m[K-std=c++2b[m[K’ or ‘[01m[K-std=gnu++2b[m[K’
+   99 |     m_detect_core = std::thread([this][01;35m[K->[m[Kvoid{
+      |                                       [01;35m[K^~[m[K
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:[m[K In lambda function:
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:118:42:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::unique_lock<std::mutex> lock[m[K’
+  118 |          std::unique_lock<std::mutex> [01;31m[Klock[m[K(init_mutex);
+      |                                       [01;31m[K^~~~[m[K
+
+[01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:117:42:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_lock<std::mutex> lock[m[K’ previously declared here
+  117 |          std::unique_lock<std::mutex> [01;36m[Klock[m[K(data_mutex);
+      |                                       [01;36m[K^~~~[m[K
+
+gmake[2]: *** [CMakeFiles/armor_pub.dir/build.make:174：CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:156：CMakeFiles/armor_pub.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

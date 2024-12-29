@@ -1,0 +1,50 @@
+[0.007s] Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_pub': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_pub -- -j12 -l12
+[0.043s] [ 14%] Built target hik_driver
+[0.047s] [ 28%] Built target armor_pub_node
+[0.061s] [35m[1mConsolidate compiler generated dependencies of target armor_pub[0m
+[0.085s] [ 35%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o[0m
+[0.955s] In file included from [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[0.955s]                  from [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:1[m[K:
+[0.955s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[0.955s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:48:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[0.955s]    48 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // 时间戳 毫秒
+[0.955s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[0.955s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:47:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[0.955s]    47 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};//存储图像数据
+[0.955s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[0.955s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:59:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[0.955s]    59 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[0.955s]       |     [01;35m[K^~~~~~~~[m[K
+[4.714s] [ 42%] [32m[1mLinking CXX shared library libarmor_pub.so[0m
+[4.861s] [100%] Built target armor_pub
+[4.869s] Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_pub' returned '0': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_pub -- -j12 -l12
+[4.870s] Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_pub': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xzq/Downloads/armor_ws/build/armor_pub
+[4.875s] -- Install configuration: "Release"
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/lib/armor_pub/armor_pub_node
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/include
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/include/pnpslover.h
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/include/detect.h
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/library_path.sh
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/library_path.dsv
+[4.876s] -- Installing: /home/xzq/Downloads/armor_ws/install/armor_pub/lib/libarmor_pub.so
+[4.876s] -- Set runtime path of "/home/xzq/Downloads/armor_ws/install/armor_pub/lib/libarmor_pub.so" to ""
+[4.876s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/package_run_dependencies/armor_pub
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/parent_prefix_path/armor_pub
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/ament_prefix_path.sh
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/ament_prefix_path.dsv
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/path.sh
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/environment/path.dsv
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.bash
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.sh
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.zsh
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/local_setup.dsv
+[4.877s] -- Installing: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/package.dsv
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/packages/armor_pub
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/ament_index/resource_index/rclcpp_components/armor_pub
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.877s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/ament_cmake_export_libraries-extras.cmake
+[4.878s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/armor_pubConfig.cmake
+[4.878s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/cmake/armor_pubConfig-version.cmake
+[4.878s] -- Up-to-date: /home/xzq/Downloads/armor_ws/install/armor_pub/share/armor_pub/package.xml
+[4.879s] Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_pub' returned '0': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/xzq/Downloads/armor_ws/build/armor_pub

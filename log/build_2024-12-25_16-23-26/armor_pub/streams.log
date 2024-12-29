@@ -1,0 +1,30 @@
+[0.007s] Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_pub': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_pub -- -j12 -l12
+[0.042s] [ 14%] Built target hik_driver
+[0.043s] [ 28%] Built target armor_pub_node
+[0.055s] [35m[1mConsolidate compiler generated dependencies of target armor_pub[0m
+[0.079s] [ 35%] [32mBuilding CXX object CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o[0m
+[0.940s] In file included from [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/include/detect.h:7[m[K,
+[0.940s]                  from [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:1[m[K:
+[0.941s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:[m[K In copy constructor ‘[01m[KHikFrame::HikFrame(const HikFrame&)[m[K’:
+[0.941s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:48:13:[m[K [01;35m[Kwarning: [m[K‘[01m[KHikFrame::m_timestamp[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[0.941s]    48 |     int64_t [01;35m[Km_timestamp[m[K = 0;  // 时间戳 毫秒
+[0.941s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[0.941s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:47:13:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kcv::Mat HikFrame::m_rgb_frame[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[0.941s]    47 |     cv::Mat [01;35m[Km_rgb_frame[m[K = {};//存储图像数据
+[0.941s]       |             [01;35m[K^~~~~~~~~~~[m[K
+[0.941s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/HikDriver/include/HikDriver/HikDriver.h:59:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[0.941s]    59 |     [01;35m[KHikFrame[m[K(const HikFrame& other)
+[0.941s]       |     [01;35m[K^~~~~~~~[m[K
+[2.236s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:[m[K In lambda function:
+[2.236s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:118:42:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::unique_lock<std::mutex> lock[m[K’
+[2.236s]   118 |          std::unique_lock<std::mutex> [01;31m[Klock[m[K(init_mutex);
+[2.236s]       |                                       [01;31m[K^~~~[m[K
+[2.236s] 
+[2.236s] [01m[K/home/xzq/Downloads/armor_ws/src/detectArmor/src/armor_detector/show.cpp:117:42:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::unique_lock<std::mutex> lock[m[K’ previously declared here
+[2.236s]   117 |          std::unique_lock<std::mutex> [01;36m[Klock[m[K(data_mutex);
+[2.236s]       |                                       [01;36m[K^~~~[m[K
+[2.236s] 
+[3.119s] gmake[2]: *** [CMakeFiles/armor_pub.dir/build.make:174：CMakeFiles/armor_pub.dir/src/armor_detector/show.cpp.o] 错误 1
+[3.119s] gmake[1]: *** [CMakeFiles/Makefile2:156：CMakeFiles/armor_pub.dir/all] 错误 2
+[3.119s] gmake: *** [Makefile:146：all] 错误 2
+[3.121s] Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_pub' returned '2': AMENT_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/MVS/lib/64:/opt/MVS/lib/32 PYTHONPATH=/home/xzq/Downloads/armor_ws/install/armor_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_pub -- -j12 -l12

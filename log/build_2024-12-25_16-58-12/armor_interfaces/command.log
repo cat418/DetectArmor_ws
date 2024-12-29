@@ -1,0 +1,4 @@
+Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_interfaces -- -j12 -l12
+Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/xzq/Downloads/armor_ws/build/armor_interfaces -- -j12 -l12
+Invoking command in '/home/xzq/Downloads/armor_ws/build/armor_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xzq/Downloads/armor_ws/build/armor_interfaces
+Invoked command in '/home/xzq/Downloads/armor_ws/build/armor_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/xzq/Downloads/armor_ws/build/armor_interfaces
