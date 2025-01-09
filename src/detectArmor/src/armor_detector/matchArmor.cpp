@@ -9,6 +9,9 @@ inline float distance( cv::Point2f point1, cv::Point2f point2 ) {
 void Armor_detector::match_armour(Light &l,Armour &a) {
     std::vector<std::pair<cv::RotatedRect,cv::RotatedRect>> really_armor;
     for ( auto & r : a.two_Light ) {
+        if( a.two_Light.empty() ) {
+            std::cout << "matchArmor 空了" << std::endl;
+        }
         float height1 = std::max ( r.first.size.height, r.first.size.width );
         float height2 = std::max ( r.second.size.height, r.second.size.width );
         cv::Point2f point1=r.first.center;
@@ -16,9 +19,8 @@ void Armor_detector::match_armour(Light &l,Armour &a) {
         float Distance = distance( point1, point2 );
         float ratio1 = Distance / height1;
         float ratio2 = Distance / height2;
-
-        if( ratio1 < ( a.m_width / l.m_height +0.7 ) && ratio1 > 0 &&
-            ratio2 < ( a.m_width/ l.m_height +0.7 ) && ratio2 > 0 && 
+        if( ratio1 < ( a.get_width() / l.get_height() +0.7 ) && ratio1 > 0 &&
+            ratio2 < ( a.get_width() / l.get_height() +0.7 ) && ratio2 > 0 && 
             Distance > 20 ) {
                 really_armor.push_back( std::make_pair( r.first,r.second ));
         }

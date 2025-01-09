@@ -22,6 +22,9 @@ find_package(Threads REQUIRED)
 find_package(Eigen3 REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(OpenVINO REQUIRED) 
+find_package(cv_bridge REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(rclcpp REQUIRED)
 
 ament_auto_find_build_dependencies()
 
@@ -46,7 +49,7 @@ target_link_libraries(${PROJECT_NAME}
     openvino::runtime)
     
 rclcpp_components_register_node(${PROJECT_NAME}
-  PLUGIN "ArmorPubNode"
+  PLUGIN "Armor_detector"
   EXECUTABLE ${PROJECT_NAME}_node
 )
 

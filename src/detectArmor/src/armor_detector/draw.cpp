@@ -24,7 +24,6 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
 
         std::sort(points.begin(),points.end(),comparePoints);
         std::sort(points2.begin(),points2.end(),comparePoints);
-
         if(points[0].x<points2[1].x) {
             std::vector<cv::Point> contour;
             contour.push_back( points[0] );
@@ -39,15 +38,12 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
                 cv::line(frame,points2[3],points[2],cv::Scalar(0,255,0),2,8,0);
                 cv::line(frame,points[2],points[0],cv::Scalar(0,255,0),2,8,0);
                 //特征点:左上 左下 右下 右上
-                a.four_point.push_back( points[0] );
-                a.four_point.push_back( points[2] );
-                a.four_point.push_back( points2[3] );
-                a.four_point.push_back( points2[1] );
-                // for ( int i=0; i<a.four_point.size();i++) {
-                //     cv::circle(frame,a.four_point[i],5,cv::Scalar(0,255,0),-1);
-                //     std::string num = std::to_string(i);
-                //     cv::putText(frame, num, a.four_point[i] + cv::Point2f(10,-10),cv::FONT_HERSHEY_SIMPLEX,0.5,cv::Scalar(255,0,0),1);
-                // }
+                std::vector<cv::Point2f> four_points;
+                four_points.push_back( points[0] );
+                four_points.push_back( points[2] );
+                four_points.push_back( points2[3] );
+                four_points.push_back( points2[1] );
+                a.all_four_point.push_back( four_points );
             }
         }else {
             std::vector<cv::Point> contour;
@@ -63,15 +59,12 @@ void Armor_detector::draw_armor(cv::Mat &frame,Light &l,Armour &a) {
                 cv::line(frame,points[3],points2[2],cv::Scalar(0,255,0),2,8,0);
                 cv::line(frame,points2[2],points2[0],cv::Scalar(0,255,0),2,8,0);
                 //特征点:左上 左下 右下 右上
-                a.four_point.push_back( points2[0]);
-                a.four_point.push_back( points2[2] );
-                a.four_point.push_back( points[3] );
-                a.four_point.push_back( points[1] );
-                // for ( int i=0; i<a.four_point.size();i++) {
-                //     cv::circle(frame,a.four_point[i],5,cv::Scalar(0,255,0),-1);
-                //     std::string num = std::to_string(i);
-                //     cv::putText(frame, num, a.four_point[i] + cv::Point2f(10,-10),cv::FONT_HERSHEY_SIMPLEX,0.5,cv::Scalar(255,0,0),1);
-                // }
+                std::vector<cv::Point2f> four_points;
+                four_points.push_back( points2[0]);
+                four_points.push_back( points2[2] );
+                four_points.push_back( points[3] );
+                four_points.push_back( points[1] );
+                a.all_four_point.push_back( four_points );
             }
         }
     }

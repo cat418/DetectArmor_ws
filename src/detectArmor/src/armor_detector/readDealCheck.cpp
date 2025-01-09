@@ -1,9 +1,5 @@
 #include "detect.h"
 
-//构造函数
-Armor_detector::Armor_detector(): m_cap(0) {
-}
-
 //读取图像
 cv::Mat Armor_detector::read_frame() {
     cv::Mat frame;

@@ -20,5 +20,8 @@ void Armor_detector::detect_light(std::vector<std::vector<cv::Point>> contours,L
         }
     }
     l.light_rect = allRotatedRect;
+    if( l.light_rect.empty() ) {
+        std::cout << "detectLight 空了" << std::endl;
+    }
 }
 

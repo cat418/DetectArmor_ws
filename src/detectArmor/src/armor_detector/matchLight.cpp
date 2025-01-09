@@ -30,4 +30,6 @@ void Armor_detector::match_light( cv::Mat frame, Light &l, Armour &a) {
             }
         }
     }
+
+    
 }
