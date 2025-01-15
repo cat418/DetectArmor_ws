@@ -95,6 +95,8 @@ private:
     cv::VideoCapture m_cap;
     //发布消息
     rclcpp::Publisher<armor_interfaces::msg::Armors>::SharedPtr m_armors_publish;
+    //发布图像
+    rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr m_image_publish;
     //线程对象
     std::thread m_push_core;
     std::thread m_detect_core;

@@ -17,6 +17,8 @@ find_package(ament_cmake_auto REQUIRED)
 find_package(Threads REQUIRED)
 find_package(OpenCV REQUIRED)
 find_package(OpenVINO REQUIRED) 
+find_package(cv_bridge REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 ament_auto_find_build_dependencies()
 
@@ -32,6 +34,8 @@ target_include_directories(${PROJECT_NAME} PUBLIC ${OpenVINO_INCLUDE_DIRS})
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   OpenCV
+  cv_bridge
+  sensor_msgs
 )
 target_link_libraries(${PROJECT_NAME} 
     ${OpenCV_LIBS}

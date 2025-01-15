@@ -46,8 +46,8 @@ void PnpSlover::calculate_pnp(Armour &a, Light &l,   armor_interfaces::msg::Armo
         armor_msg.pose.position.z = center.z;
 
         cv::solvePnP( m_small_armor_point3d, a_four_point, m_matrix, m_distCoeffs, rvec, tvec, false, cv::SOLVEPNP_ITERATIVE);
-        double distance = cv::norm(tvec);
-        std::cout << "distance " << "=" << " " << distance << std::endl;
+        float distance = cv::norm(tvec);
+        armor_msg.distance_to_center = distance;
 
         //求四元数
         cv::Mat rvec_rotation_matrix;
@@ -72,6 +72,6 @@ void PnpSlover::calculate_pnp(Armour &a, Light &l,   armor_interfaces::msg::Armo
             armor_msg.apexs[i].z=0.0f;
         }
         armors.armors.push_back( armor_msg );
-        }
+      }
     } 
 }

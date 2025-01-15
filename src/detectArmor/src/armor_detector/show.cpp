@@ -8,10 +8,15 @@
 Armor_detector::Armor_detector(const rclcpp::NodeOptions &options) :
     Node("armor_detector",options)
 {
+    //防止数据丢失
+     auto qos = rclcpp::QoS(rclcpp::QoSInitialization::from_rmw(rmw_qos_profile_default))
+                       .reliable()
+                       .keep_last(10);
     //创建装甲板消息发布器
     //rclcpp::SensorDataQoS() 表示使用传感器数据的质量服务（QoS）。该QoS设置有助于确保图像数据等高频传输的数据在网络拥堵时也能保证合适的传输性能。
     m_armors_publish = this->create_publisher<armor_interfaces::msg::Armors>("/armor",rclcpp::SensorDataQoS());
-    
+    m_image_publish = this->create_publisher<sensor_msgs::msg::Image>("/image",qos);
+   
         // HikDriver hik_driver(0);
         // if (hik_driver.isConnected()) {
         //     //设置自动增益 曝光
@@ -25,7 +30,7 @@ Armor_detector::Armor_detector(const rclcpp::NodeOptions &options) :
         //创建Armor Light
         Armour a;
         Light l;
-        m_cap.open("/home/xzq/Downloads/4.mp4");
+        m_cap.open("/home/xzq/Desktop/MV-CS016-10UC+DA2849947/11.avi");
         if( !m_cap.isOpened() ) {
             std::cout << "视频打开失败" << std::endl;
             return ;
@@ -45,6 +50,12 @@ Armor_detector::Armor_detector(const rclcpp::NodeOptions &options) :
         if (frame.empty()) {
             std::cout<<"frame是空的"<<std::endl;
             cv::imshow("armor1",img);
+            //转换为ROS消息
+            auto msg = cv_bridge::CvImage( std_msgs::msg::Header(), "bgr8", img).toImageMsg();
+            //添加时间戳
+            msg->header.stamp = this->get_clock()->now();
+            //发布图像消息
+            m_image_publish->publish( *msg );
             //将图像转化为ROS2类型 创建cv_bridge对象并填充数据
             auto bridge = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img);
         }else{
@@ -59,6 +70,12 @@ Armor_detector::Armor_detector(const rclcpp::NodeOptions &options) :
         //绘制
         draw_armor( img, l, a);
         cv::imshow("armor",img);
+        //转换为ROS消息
+        auto msg = cv_bridge::CvImage( std_msgs::msg::Header(), "bgr8", img).toImageMsg();
+        //添加时间戳
+        msg->header.stamp = this->get_clock()->now();
+        //发布图像消息
+        m_image_publish->publish( *msg );
         //将图像转化为ROS2类型 创建cv_bridge对象并填充数据
         auto bridge = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", img);
         //创建Armors消息
